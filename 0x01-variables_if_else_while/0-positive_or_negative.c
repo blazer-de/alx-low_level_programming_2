@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - Prints a random number and states whether
- * it is positive, negative, or zero.
+ * main - assign a random number to the variable n each time it is executed
+ * and print the last digit of the number stored in the variable n
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -17,9 +17,10 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 		printf("%d is positive\n", n);
-	else if (n < 0)
-		printf("%d is negative\n, n);
-	else
-		printf(" % d is zero\n", n);
+	if (n == 0)
+		printf("%d is zero\n, n);
+	if (n < 0)
+		printf(" % d is negative\n", n);
+}
 	return (0);
 }
